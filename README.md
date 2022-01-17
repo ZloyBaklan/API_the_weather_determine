@@ -11,12 +11,11 @@
 ## Как установить
 * Python должен быть уже установлен. 
 * Правильно будет установить виртуальное окружение:
-<<<<<<< HEAD
-"""python -m venv venv"""
+""" python -m venv venv """
 Далее необходимо его активировать:
-"""source venv/Scripts/activate"""
+""" source venv/Scripts/activate """
 Затем используйте pip для установки зависимостей:
-"""pip install -r requirements.txt"""
+""" pip install -r requirements.txt """
 
 ### Цель проекта
 Научиться выводить в терминале прогноз погоды, используя API.
