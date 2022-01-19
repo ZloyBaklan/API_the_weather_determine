@@ -1,17 +1,19 @@
 import requests
 
 
-def weather_in_town(places):
-  for i in places:
-    url_template = f'https://wttr.in/{i}'
+def determining_weather(place):
+    url_template = f'https://wttr.in/{place}'
     request_parameters = {
       'lang': 'ru',
-      'F': 'm'
+      'm': '',
+      'T': ''
     }
     response = requests.get(url_template, request_parameters)
     response.raise_for_status()
-    print('\n\n', response.text, '\n')
+    return response.text
+
 
 if __name__ == '__main__':
-  places = ['london','svo','cherepovets']
-  weather_in_town(places)
+    places = ['london', 'svo', 'cherepovets']
+    for place in places:
+        print('\n', determining_weather(place), '\n')
