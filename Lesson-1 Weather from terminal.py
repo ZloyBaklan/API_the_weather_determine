@@ -7,8 +7,8 @@ def determine_weather_forecast(place):
       'lang': 'ru',
       'm': '',
       'T': '',
-      'n':'',
-      'q':''
+      'n': '',
+      'q': ''
     }
     response = requests.get(url_template, request_parameters)
     response.raise_for_status()
